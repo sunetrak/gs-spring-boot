@@ -1,4 +1,5 @@
 FROM gradle:alpine
+WORKDIR /complete
 RUN gradle build --no-daemon 
 
 ARG JAR_FILE=complete/build/libs/*.jar
