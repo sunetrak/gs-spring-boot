@@ -1,4 +1,5 @@
 FROM gradle:alpine
+COPY complete/* .
 WORKDIR /complete
 RUN gradle build 
 
