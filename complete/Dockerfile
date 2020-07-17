@@ -1,4 +1,5 @@
-FROM gradle:alpine
+FROM gradle:6.5.1-jdk8
+ADD --chown=gradle . .
 COPY . .
 RUN gradle build
 
